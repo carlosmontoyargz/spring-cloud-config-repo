@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/licensing_service
+        username: postgres
+        password: sipirili
+        hikari:
+            maximum-pool-size: 3
+    jpa:
+        hibernate:
+            ddl-auto: create
+        properties:
+            hibernate:
+                jdbc:
+                    lob.non_contextual_creation: true
+example:
+    property: I am an example property for development environment
